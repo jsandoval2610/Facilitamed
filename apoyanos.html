@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Apóyanos</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+  <!-- CSS -->
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init('Go_i-70OITZSBsTcA');
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // these IDs from the previous steps
+        emailjs.sendForm('contact_service', 'contact_form', this)
+          .then(function() {
+            console.log('SUCCESS!');
+            alert("SUCCESS!");
+            document.getElementById("contact-form").reset();
+          }, function(error) {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-bar nav-container">
+      <img class="logo" src="images/logo.png" alt="Facilitamed Logo">
+      <a class="navbar-brand" href="">Facilitamed eV</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse nav-length" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto navbar-items">
+          <li class="nav-item items">
+            <a class="nav-link" href="inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item items">
+            <a class="nav-link" href="p-estudiantes.html">Estudiantes</a>
+          </li>
+          <li class="nav-item items">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item items">
+            <a class="nav-link" href="apoyanos.html">Apóyanos</a>
+          </li>
+          <li class="nav-item items">
+            <a class="nav-link" href="noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item items">
+            <button type="button" class="btn btn-secondary btn-sm nav-btn en-btn"><a href="support-us.html" class="navbtn-link nav-link en-link">
+              <img src="images/usa-flag.PNG" alt="English" class="lang-img"></a></button>
+
+            <button type="button" class="btn btn-secondary btn-sm nav-btn sp-btn">
+              <a class="navbtn-link nav-link sp-link" href="apoyanos.html"><img src="images/spanish.png" alt="Spanish" class="lang-img"></a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section id="heading">
+    <h1 class="heading-title">Apóyanos</h1>
+
+  </section>
+
+  <section id="member">
+    <h1 class="member-title">Vuélvete miembro</h1>
+    <p class="member-info"> Algunas de las principales razones que dificultan a los estudiantes de medicina terminar sus estudios son: el tener que mudarse para vivir cerca de la universidad, costo de transporte, comida, útiles de oficina y en etapas
+      más avanzadas de su carrera, equipo médico. A esto
+      hay que sumarle que, para muchas familias, los hijos/as adultos tienen una función importante en la economía familiar como fuente importante de ingresos, por lo que muchas veces tienen que buscar un trabajo para poder ayudar a proveer para su
+      familia. En estos
+      países no es posible estudiar medicina Y tener un trabajo al mismo tiempo. La responsabilidad familiar es muchas veces es más importante que continuar con estudios,
+      por lo que muchos estudiantes muchas veces renuncian a sus sueños para poder ayudar a
+      proveer para sus familias. </p>
+
+    <p class="member-info">Nuestro objetivo es liberar a los estudiantes de responsabilidades familiares como conseguir
+      un empleo para apoyar a financieramente a su familia, para que se puedan concentrar
+      únicamente en lo que debería ser su prioridad… ¡convertirse en médicos!</p>
+
+    <p class="member-info">…y no podemos hacer esto solos, ¡Necesitamos TU ayuda!</p>
+
+    ​<p class="member-info">Estamos buscando a personas que quieran volverse miembros de nuestra asociación por un
+      costo de $12 mensuales. Esta cantidad es suficiente para pagar una parte de los gastos
+      mensuales de un estudiante y podrás seguir sus avances a través de la carrera de medicina.
+      El período mínimo de ayuda son 6 meses para que un estudiante tenga por lo menos un
+      semestre de apoyo.</p>
+
+    <p class="member-info">Si te gusta nuestra idea y te gustaría apoyar por completo a un estudiante, contáctanos para
+      más detalles.</p>
+
+    <p class="member-info">Si la idea de volverte miembro te parece abrumadora y te gustaría hacer una donación
+      única, lo puedes hacer por el monto que tú quieras. ¡TODAS las ayudas son bienvenidas!</p>
+
+
+  </section>
+
+  <!-- Donate -->
+
+  <section id="donate">
+    <div class="row rows">
+
+      <div class="col-lg-6 support-col">
+        <h1>Donación única</h1>
+        <p class="one-donation">Puedes hacer una donación única por el monto que tu quieras.</p>
+      </div>
+
+      <div class="col-lg-6 support-col">
+        <h1 class="form-title">Apoya nuestra causa</h1>
+        <form id="contact-form" ref="form" class="form-f" method="post" enctype="text/plain">
+          <div class="form-container">
+
+            <div class="form-box">
+              <div class="form-input">
+                <span class="details">Apellidos *</span>
+                <br><input class="t-box" id="lastName" type="email" placeholder="Sus apellidos" required>
+              </div>
+            </div>
+
+            <div class="form-box">
+              <div class="form-input1">
+                <span class="details">Nombre *</span>
+                <br><input id="name" class="t-box2" type="text" placeholder="Su nombre" required>
+              </div>
+            </div>
+
+            <div class="form-box">
+              <div class="form-input2">
+                <span class="details" id="email">Correo Electrónico</span>
+                <br><input id="email" class="t-box" type="text" placeholder="Su correo electrónico">
+              </div>
+            </div>
+
+            <div class="form-box">
+              <div class="form-input2">
+                <span class="details">¿Cómo le gustaría ayudarnos?</span>
+                <br><textarea id="message" class="comment-box" name="name" rows='2' cols="80" placeholder="Deje un comentario"></textarea><br>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success" value="Send">
+              Enviar
+            </button>
+
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="container">
+
+
+  </section>
+
+
+  <!-- Blank -->
+
+  <section id="blank">
+
+  </section>
+
+  <!-- infoTab -->
+
+  <section id="infoTab">
+
+    <div class="row">
+
+      <div class="col-lg-3 info-basic1">
+        <h4 class="info-listTitle">Facilitamed eV</h4>
+        <ul class="info-list">
+          <li class="info-item"><strong>Email:</strong> facilitamed.ev@gmail.com</li>
+          <li class="info-item"><strong>Dirección:</strong> Im Rotbad 47, 72076 Tuebingen, Germany</li>
+          <li class="info-item"><strong>Cuenta de Banco:</strong> Sparkasse Tuebingen</li>
+          <li class="info-item"><strong>IBAN:</strong> DE11 6415 0020 0004 5746 59</li>
+          <li class="info-item"><strong>BIC:</strong> SOLADES1TUB</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6 info">
+        <h3>Para más información</h3>
+        <hr class="info-line">
+        <button type="button" class="btn btn-lg problem-btn">
+          <a href="mailto:facilitamed.ev@gmail.com" target="_blank" class="all-btns">¡Escríbenos!</a>
+        </button>
+      </div>
+
+      <div class="col-lg-3 info-basic">
+        <h4 class="info-listTitle">Links Rápidos</h4>
+        <ul class="info-list">
+          <li class="info-item"><a href="inicio.html" class="info-item-link">Inicio</a></li>
+          <li class="info-item"><a href="p-estudiantes.html" class="info-item-link">Para Estudiantes</a></li>
+          <li class="info-item"><a href="nosotros.html" class="info-item-link">Acerca de Nosotros</a></li>
+          <li class="info-item"><a href="apoyanos.html" class="info-item-link">Apóyanos</a></li>
+          <li class="info-item"><a href="noticias.html" class="info-item-link">Noticias</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p class="footer-note">© 2023 Webmaster Julian Sandoval</p>
+  </div>
+
+
+
+</body>
+
+</html>

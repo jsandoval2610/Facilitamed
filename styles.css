@@ -1,0 +1,796 @@
+body {
+  background-color: #F9F5EB;
+  display: inline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgba(73, 151, 208, 0.5);
+}
+
+.all-btns {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 40px;
+}
+
+.all-btns:hover {
+  color: #fff;
+}
+
+/* Home */
+/* NavBar */
+#navbar {
+  font-size: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav-container {
+  padding: 0;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-items {
+  margin-right: 500px;
+}
+
+.items {
+  padding-left: 50px;
+  width: 200px;
+  text-align: center;
+}
+
+.nav-length {
+  width: 50%
+}
+
+.nav-btn {
+  margin: auto;
+  background-color: rgba(73, 151, 208, 0.5);
+  color: #fff;
+}
+
+.lang-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.en-btn {
+  display: inline-block;
+  background-color: rgba(73, 151, 208, 0.5);
+  border-radius: 10%;
+}
+
+.sp-btn {
+  display: inline-block;
+  float: right;
+  color: rgba(73, 151, 208, 0.5);
+  border-radius: 10%;
+}
+
+.en-btn:hover {
+  background-color: #dc4a46;
+}
+
+.sp-btn:hover {
+  background-color: #dc4a46;
+}
+
+/* Intro */
+#intro {
+  padding-bottom: 125px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.intro-logo {
+  width: 300px;
+  height: 300px;
+  margin-left: 1100px;
+  position: absolute;
+}
+
+.intro-title {
+  display: block;
+  text-align: left;
+  margin: auto;
+  font-size: 6rem;
+  width: 65%;
+  padding-top: 250px;
+}
+
+.intro-sub {
+  padding-top: 40px;
+  display: block;
+  text-align: left;
+  margin: auto;
+  width: 65%;
+  font-size: 2rem;
+}
+
+/* Features */
+#features {
+  color: #fff;
+  width: 100%;
+  overflow: hidden;
+}
+
+.feature-container {
+  text-align: center;
+}
+
+.features-header {
+  color: #fff;
+  text-decoration: none;
+}
+
+.features-header:hover {
+  color: gray;
+}
+
+.feature-1 {
+  background-color: #607EAA;
+  padding: 45px;
+}
+
+.feature-2 {
+  background-color: rgba(73, 151, 208, 0.5);
+  padding: 45px;
+}
+
+.feature-3 {
+  background-color: #dc4a46;
+  padding: 45px;
+}
+
+/* The Problem */
+#problem {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.problem-title {
+  font-size: 5.5rem;
+  display: block;
+  width: 65%;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+.problem-p {
+  font-size: 1.4rem;
+  display: block;
+  width: 65%;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.problem-img {
+  width: 25%;
+  margin-left: 800px;
+  display: block;
+  padding-bottom: 50px;
+  border-radius: 5%;
+}
+
+.problem-btn {
+  display: block;
+  margin: auto;
+  text-align: center;
+  background-color: #dc4a46;
+  color: #fff;
+}
+
+.problem-btn:hover {
+  background-color: #607EAA;
+  color: #fff;
+}
+
+/* How */
+#how {
+  background-color: rgba(73, 151, 208, 0.5);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.how-title {
+  color: #fff;
+  text-align: left;
+  margin: auto;
+  display: block;
+  width: 65%;
+  font-size: 5.5rem;
+  padding-bottom: 25px;
+}
+
+.how-p {
+  color: #fff;
+  text-align: left;
+  margin: auto;
+  display: block;
+  width: 65%;
+  font-size: 1.4rem;
+  padding-bottom: 15px;
+}
+
+/* Facts */
+#facts {
+  padding: 100px 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.facts-img {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  border-radius: 15%;
+}
+
+.facts-p {
+  margin: auto;
+  text-align: left;
+  padding-top: 35px;
+  width: 70%;
+}
+
+.rows {
+  padding-bottom: 150px;
+}
+
+.facts-comp {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  padding-top: 75px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+/* Spread the word */
+#spread {
+  background-color: rgba(73, 151, 208, 0.5);
+  padding: 100px 0;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.spread-p {
+  color: #fff;
+  font-size: 2rem;
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+.spread-img {
+  margin: 1rem 1.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.spread-img:hover {
+  opacity: 50%;
+}
+
+/* infoTab */
+#infoTab {
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.info {
+  text-align: center;
+}
+
+.info-line {
+  padding-bottom: 25px;
+  border-top: 3px solid;
+  color: #dc4a46;
+  width: 80%;
+  margin: auto;
+}
+
+.info-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-basic {
+  text-align: left;
+  padding-left: 40px;
+}
+
+.info-basic1 {
+  padding-left: 40px;
+}
+
+.info-item {
+  padding-bottom: 15px;
+}
+
+.info-item-link {
+  text-decoration: none;
+  color: black;
+}
+
+.info-listTitle {
+  padding-bottom: 15px;
+}
+
+.btn-pa {
+  padding: 1px 50px;
+  margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+  background-color: gray;
+  color: #fff;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-note {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  padding-top: 5px;
+  margin-left: 1200px;
+}
+
+/* ------------------------------------ FOR STUDENTS -------------------------------------- */
+/* Heading */
+#heading {
+  background-color: rgba(73, 151, 208, 0.5);
+  padding: 75px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.heading-title {
+  font-size: 6rem;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+}
+
+/* Requirements */
+.students-subtitle {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 45px 0 30px;
+}
+
+.students-info {
+  text-align: center;
+  padding-bottom: 75px;
+  color: black;
+}
+
+.students-list {
+  padding-bottom: 50px;
+  margin: auto;
+  list-style-type: square;
+  width: 80%;
+}
+
+.list-container {
+  padding-left: 200px;
+  padding-top: 15px;
+  font-size: 1.2rem;
+}
+
+/* Application Process  */
+#application {
+  background-color: rgba(73, 151, 208, 0.5);
+  width: 100%;
+  overflow: hidden;
+}
+
+.application-subtitle {
+  color: #fff;
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 45px 0 30px;
+}
+
+.application-info {
+  text-align: center;
+  padding-bottom: 75px;
+  color: #fff;
+}
+
+/* ------------------------------------ About Us -------------------------------------- */
+.us-p {
+  padding: 50px 0;
+  margin: auto;
+  text-align: left;
+  width: 60%;
+}
+
+/* Philosophy / Values */
+#phil-values {
+  background-color: rgba(73, 151, 208, 0.5);
+  margin: auto;
+}
+
+.phil-heading {
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 3.5rem;
+}
+
+.phil-p {
+  text-align: left;
+  margin: auto;
+  width: 70%;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.phil-container {
+  border-top: 0;
+  font-size: 1.2rem;
+}
+
+.phil-list {
+  padding-bottom: 50px;
+  margin: auto;
+  list-style-type: square;
+  width: 80%;
+}
+
+/* Statutes */
+#statutes {
+  margin: auto;
+}
+
+.s-container {
+  padding: 50px 0;
+}
+
+.statutes-btn {
+  display: block;
+  margin: auto;
+  text-align: center;
+  background-color: #dc4a46;
+  color: #fff;
+  padding: 25px 50px;
+}
+
+.statutes-btn:hover {
+  background-color: #607EAA;
+}
+
+.statutes-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.statutes-link:hover {
+  color: #fff;
+}
+
+/* Directors */
+#directors {
+  background-color: rgba(73, 151, 208, 0.5);
+}
+
+.directors-heading {
+  color: #fff;
+  text-align: center;
+  padding: 50px 0 75px;
+  font-size: 3.5rem;
+}
+
+.directors-img {
+  width: 45%;
+  margin: auto;
+  display: block;
+  padding-bottom:
+}
+
+.director-p {
+  padding-bottom: 0;
+  padding-top: 10px;
+  border: 0;
+  text-align: center;
+}
+
+.directors-info {
+  width: 80%;
+  text-align: left;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.p2 {
+  padding-top: 1rem;
+}
+
+/* Our Story */
+#story {
+  padding: 100px 0;
+}
+
+.story-title {
+  font-size: 5.5rem;
+  display: block;
+  width: 65%;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+/* Support */
+#support {
+  background-color: rgba(73, 151, 208, 0.5);
+  padding: 75px 0;
+  text-align: center;
+}
+
+.support-btn {
+  display: block;
+  margin: auto;
+  text-align: center;
+  background-color: #dc4a46;
+  color: #fff;
+}
+
+.support-btn:hover {
+  background-color: #607EAA;
+  color: #fff;
+}
+
+.support-p {
+  color: #fff;
+  font-size: 2rem;
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+/* ------------------------------------ Support Us -------------------------------------- */
+/* Member */
+#member {
+  padding: 100px 0;
+}
+
+.member-title {
+  margin: auto;
+  text-align: left;
+  width: 70%;
+  padding-bottom: 30px;
+}
+
+.member-info {
+  margin: auto;
+  text-align: left;
+  width: 70%;
+  padding-bottom: 15px;
+}
+
+.member-btn:hover {
+  background-color: #607EAA;
+}
+
+.member-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.member-link:hover {
+  color: #fff;
+}
+
+/* Donate */
+#donate {
+  padding: 50px 0;
+}
+
+.support-col {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.one-donation {
+  padding-top: 10px;
+  width: 70%;
+  margin: auto;
+}
+
+.form-title {
+  padding-bottom: 25px;
+}
+
+.comment-box {
+  margin-top: 10px;
+}
+
+.form-input {
+  display: block;
+  float: right;
+  width: 50%;
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+.form-input1 {
+  display: block;
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+.form-input2 {
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+.t-box {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  border-bottom: 2px solid rgba(73, 151, 208, 0.5);
+  background-color: #F9F5EB;
+}
+
+.t-box2 {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 48%;
+  border-bottom: 2px solid rgba(73, 151, 208, 0.5);
+  background-color: #F9F5EB;
+}
+
+.send-b {
+  margin-left: 1px;
+}
+
+.send-btn {
+  color: #607EAA;
+  text-decoration: none;
+  padding: 8px 24px;
+}
+
+.send-btn:hover {
+  color: #fff;
+}
+
+#blank {
+  padding: 100px 0;
+  background-color: rgba(73, 151, 208, 0.5);
+}
+
+/* ------------------------------------ News -------------------------------------- */
+/* Our Students */
+#students {
+  padding: 100px 0;
+}
+
+.students-p {
+  width: 70%;
+  text-align: left;
+  margin: auto;
+  padding-bottom: 16px;
+}
+
+.bottom-p {
+  margin-left: 225px;
+}
+
+.profile-container {
+  text-align: right;
+}
+
+/* =========================================== Spanish CSS =============================================== */
+/* Navbar */
+.elementos {
+  padding-left: 50px;
+  width: 200px;
+  text-align: center;
+}
+
+/* Noticias */
+.heading-titulo {
+  font-size: 5rem;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+}
+
+/* =========================================== MEDIA QUERIES (MEDIUM DEVICES) =============================================== */
+@media screen and (max-width: 1024px) {
+  .intro-logo {
+    align-items: center;
+    margin: auto;
+  }
+
+  .problem-img {
+    margin: auto;
+  }
+
+  .support-col {
+    padding-bottom: 50px;
+  }
+
+  .footer-note {
+    margin: auto;
+    text-align: center;
+  }
+
+  .students-p {
+    margin: auto;
+  }
+
+  .intro-title {
+    font-size: 4.5rem;
+  }
+
+  .intro-sub {
+    font-size: 1.5rem;
+  }
+
+}
+
+/* =========================================== MEDIA QUERIES (SMALL DEVICES) =============================================== */
+@media screen and (max-width: 600px) {
+  .intro-logo {
+    align-items: center;
+    margin: auto;
+  }
+
+  .problem-img {
+    margin: auto;
+  }
+
+  .support-col {
+    padding-bottom: 35px;
+  }
+
+  .footer-note {
+    margin: auto;
+    text-align: center;
+  }
+
+  .students-p {
+    margin: auto;
+  }
+
+  .intro-title {
+    font-size: 3rem;
+  }
+
+  .intro-sub {
+    font-size: 1.0rem;
+  }
+}

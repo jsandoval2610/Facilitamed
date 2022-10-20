@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Support Us</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+  <!-- CSS -->
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init('Go_i-70OITZSBsTcA');
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // these IDs from the previous steps
+        emailjs.sendForm('contact_service', 'contact_form', this)
+          .then(function() {
+            console.log('SUCCESS!');
+            alert("SUCCESS!");
+            document.getElementById("contact-form").reset();
+          }, function(error) {
+            console.log('FAILED...', error);
+            alert("Something went wrong, please try again");
+          });
+      });
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-bar nav-container">
+      <img class="logo" src="images/logo.png" alt="Facilitamed Logo">
+      <a class="navbar-brand" href="">Facilitamed eV</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse nav-length" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto navbar-items">
+          <li class="nav-item items">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item items">
+            <a class="nav-link" href="students.html">For Students</a>
+          </li>
+          <li class="nav-item items">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+          <li class="nav-item items">
+            <a class="nav-link" href="support-us.html">Support Us</a>
+          </li>
+          <li class="nav-item items">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+          <li class="nav-item items">
+            <button type="button" class="btn btn-secondary btn-sm nav-btn en-btn"><a href="support-us.html" class="navbtn-link nav-link en-link">
+              <img src="images/usa-flag.PNG" alt="English" class="lang-img"></a></button>
+
+            <button type="button" class="btn btn-secondary btn-sm nav-btn sp-btn">
+              <a class="navbtn-link nav-link sp-link" href="apoyanos.html"><img src="images/spanish.png" alt="Spanish" class="lang-img"></a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section id="heading">
+    <h1 class="heading-title">Support Us</h1>
+
+  </section>
+
+  <section id="member">
+    <h1 class="member-title">Become a member</h1>
+    <p class="member-info"> The main reason students do not finish medical school in Central America is they are expected to uproot their life to a different city and pay for rent, transportation, food, office supplies and later in their medical
+      studies also buy medical
+      equipment while still being a main provider for their families back home. Medical school around the world is a full time ordeal. Any added responsibility presents a burden which makes an already challenging task, barely accomplishable, forcing
+      many students to choose between their studies and their families. </p>
+
+    <p class="member-info">Our goal is to free students from the extra responsibilities so they can fully concentrate on what their main job should be… becoming a doctor!</p>
+
+    <p class="member-info">…and we can´t do this by ourselves, we need YOUR help!</p>
+
+    ​<p class="member-info">We are looking for people to join our monthly membership at $12/month. This amount suffices to sponsor part of a student’s expenses and you will be able to track their progress
+      through medicine school. The minimum time period to join is a total of six months to ensure the students have at least one semester’s worth of support. We have chosen 6 months as this equates to one semester’s worth and provides stability to a
+      student for a reasonable amount of time.</p>
+
+    <p class="member-info">If you like our ideas and would like to support a student of your choice, you can contact us for more details.</p>
+
+    <p class="member-info">If becoming a member sounds overwhelming, you may do a donation in any amount you desire. We encourage any and all amounts as every little bit helps!</p>
+
+
+  </section>
+
+  <!-- Donate -->
+
+  <section id="donate">
+    <div class="row rows">
+
+      <div class="col-lg-6 support-col">
+        <h1>One-time donation</h1>
+        <p class="one-donation">You can make a one time donation for any amount you desire.</p>
+      </div>
+
+      <div class="col-lg-6 support-col">
+        <h1 class="form-title">Support our cause</h1>
+
+        <div class="form-container">
+          <form class="form-f" id="contact-form" ref="form" method="post" enctype="text/plain">
+
+            <div class="form-box">
+              <div class="form-input">
+                <span class="details">Last Name *</span>
+                <br><input class="t-box" type="text" placeholder="Your last name" required>
+              </div>
+            </div>
+
+            <div class="form-box">
+              <div class="form-input1">
+                <span class="details">First Name *</span>
+                <br><input class="t-box2" type="text" placeholder="Your name" required>
+              </div>
+            </div>
+
+            <div class="form-box">
+              <div class="form-input2">
+                <span class="details">Email *</span>
+                <br><input class="t-box" type="text" placeholder="Your email" required>
+              </div>
+            </div>
+
+
+            <div class="form-box">
+              <div class="form-input2">
+                <span class="details">How would you like to support us?</span>
+                <br><textarea class="comment-box" name="name" rows='2' cols="80" placeholder="Leave a comment"></textarea><br>
+              </div>
+            </div>
+
+            <button type="submit" value="send" class="btn btn-outline-secondary send-b">
+              Send
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Blank -->
+
+  <section id="blank">
+
+  </section>
+
+  <!-- infoTab -->
+
+  <section id="infoTab">
+
+    <div class="row">
+
+      <div class="col-lg-3 info-basic1">
+        <h4 class="info-listTitle">Facilitamed eV</h4>
+        <ul class="info-list">
+          <li class="info-item"><strong>Email:</strong> facilitamed.ev@gmail.com</li>
+          <li class="info-item"><strong>Address:</strong> Im Rotbad 47, 72076 Tuebingen, Germany</li>
+          <li class="info-item"><strong>Bank Account:</strong> Sparkasse Tuebingen</li>
+          <li class="info-item"><strong>IBAN:</strong> DE11 6415 0020 0004 5746 59</li>
+          <li class="info-item"><strong>BIC:</strong> SOLADES1TUB</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6 info">
+        <h3>For more Information:</h3>
+        <hr class="info-line">
+        <button type="button" class="btn btn-lg problem-btn">
+          <a href="mailto:facilitamed.ev@gmail.com" target="_blank" class="all-btns">Email Us!</a>
+        </button>
+      </div>
+
+      <div class="col-lg-3 info-basic">
+        <h4 class="info-listTitle">Quick Links</h4>
+        <ul class="info-list">
+          <li class="info-item"><a href="index.html" class="info-item-link">Home</a></li>
+          <li class="info-item"><a href="students.html" class="info-item-link">For Students</a></li>
+          <li class="info-item"><a href="about-us.html" class="info-item-link">About Us</a></li>
+          <li class="info-item"><a href="support-us.html" class="info-item-link">Support Us</a></li>
+          <li class="info-item"><a href="news.html" class="info-item-link">News</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p class="footer-note">© 2023 Webmaster Julian Sandoval</p>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
